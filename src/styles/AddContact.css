@@ -1,0 +1,75 @@
+
+.add-contact-form {
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  margin: 50px auto;
+  text-align: center;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease-in-out;
+}
+
+.add-contact-form h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.add-contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input Styling */
+.add-contact-form input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.add-contact-form input:focus {
+  border-color: #2575fc;
+}
+
+/* Submit Button Styling */
+.add-contact-form button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-contact-form button:hover {
+  background-color: #6a11cb;
+  transform: scale(1.05);
+}
+
+.add-contact-form button:focus {
+  outline: none;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .add-contact-form {
+    padding: 20px;
+    max-width: 100%;
+    margin: 20px auto;
+  }
+
+  .add-contact-form h2 {
+    font-size: 20px;
+  }
+}
+

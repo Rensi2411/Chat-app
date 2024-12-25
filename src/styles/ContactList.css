@@ -1,0 +1,91 @@
+.contact-list {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.contact-list h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Contact Items */
+.contact-item {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 12px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.contact-item:hover {
+  background-color: #f7f7f7;
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Item Text */
+.contact-item span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.contact-item p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Hover Effects */
+.contact-item:hover span {
+  color: #2575fc;
+}
+
+.contact-item:hover p {
+  color: #6a11cb;
+}
+
+
+
+/* Empty State - No Contacts Available */
+.no-contacts {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  margin-top: 40px;
+  font-style: italic;
+  color: #f0f0f0;
+}
+
+
+/* Contact List Header Text - Font Adjustment */
+.contact-list h2 {
+  font-size: 28px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Smooth Transition for All Elements */
+.contact-item,
+.add-contact-btn {
+  transition: all 0.3s ease;
+}
